@@ -25,7 +25,7 @@ class Psr7AssertsTraitTest extends TestCase
      */
     protected $schemaManager;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->schemaManager = SchemaManager::fromUri('file://' . __DIR__ . '/../fixture/petstore-with-external-docs.json');
     }
@@ -62,7 +62,7 @@ class Psr7AssertsTraitTest extends TestCase
         try {
             self::assertResponseAndRequestMatch($response, $request, $this->schemaManager);
         } catch (ExpectationFailedException $e) {
-            self::assertContains('request', $e->getMessage());
+            self::assertStringContainsStringIgnoringCase('request', $e->getMessage());
         }
     }
 

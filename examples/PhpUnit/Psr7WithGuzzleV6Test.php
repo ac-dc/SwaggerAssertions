@@ -31,7 +31,7 @@ class Psr7WithGuzzleV6Test extends TestCase
         self::$schemaManager = SchemaManager::fromUri('http://petstore.swagger.io/v2/swagger.json');
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->guzzleHttpClient = new Client(['headers' => ['User-Agent' => 'https://github.com/Maks3w/SwaggerAssertions']]);
     }

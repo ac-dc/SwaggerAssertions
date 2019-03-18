@@ -20,7 +20,7 @@ class ResponseHeadersConstraintTest extends TestCase
      */
     protected $constraint;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $schema = '{"ETag":{"minimum":1}}';
         $schema = json_decode($schema);

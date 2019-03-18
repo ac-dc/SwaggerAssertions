@@ -20,7 +20,7 @@ class RequestQueryConstraintTest extends TestCase
      */
     protected $constraint;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $schema = '[{"name":"tags","in":"query","description":"tags to filter by","required":false,"type":"array","items":{"type":"string"},"collectionFormat":"csv"},{"name":"limit","in":"query","description":"maximum number of results to return","required":true,"type":"integer","format":"int32"}]';
         $schema = json_decode($schema);

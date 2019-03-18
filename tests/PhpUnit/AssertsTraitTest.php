@@ -20,7 +20,7 @@ class AssertsTraitTest extends TestCase
      */
     protected $schemaManager;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->schemaManager = SchemaManager::fromUri('file://' . __DIR__ . '/../fixture/petstore-with-external-docs.json');
     }

@@ -1,5 +1,5 @@
 {
-    "name": "fr3d/swagger-assertions",
+    "name": "ac-dc/swagger-assertions",
     "description": "Test your API requests and responses against your swagger definition",
     "keywords": [
         "api",
@@ -14,7 +14,7 @@
     "require": {
         "php": ">= 7.1",
         "justinrainbow/json-schema": "^5",
-        "phpunit/phpunit": "^6.0||^7.0",
+        "phpunit/phpunit": "^6.0||^7.0||^8",
         "rize/uri-template": "^0.3.0",
         "zendframework/zend-http": "2.5 - 3"
     },

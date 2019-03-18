@@ -34,7 +34,7 @@ class LocalFileTest extends TestCase
         self::$schemaManager = new SchemaManager(json_decode(file_get_contents($filePath)));
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->guzzleHttpClient = new Client(['headers' => ['User-Agent' => 'https://github.com/Maks3w/SwaggerAssertions']]);
     }

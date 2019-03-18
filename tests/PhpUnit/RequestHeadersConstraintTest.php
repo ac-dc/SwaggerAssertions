@@ -21,7 +21,7 @@ class RequestHeadersConstraintTest extends TestCase
     protected $constraint;
     const TEST_SCHEMA = '[{"name":"X-Required-Header","in":"header","description":"Required header","required":true,"type":"string"},{"name":"X-Optional-Header","in":"header","description":"Optional header","type":"string"}]';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $schema = json_decode(self::TEST_SCHEMA);
 

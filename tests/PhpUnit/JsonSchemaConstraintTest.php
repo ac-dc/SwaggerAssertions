@@ -20,7 +20,7 @@ class JsonSchemaConstraintTest extends TestCase
      */
     protected $constraint;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $schema = <<<JSON
 {
